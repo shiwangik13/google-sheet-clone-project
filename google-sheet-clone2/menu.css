@@ -1,0 +1,56 @@
+.menu {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.active-options {
+    background-color: #d0d8e0;
+    background-color: white;
+}
+
+.menu > div {
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+
+.menu > div:hover {
+    background-color: #d6e1ebaa;
+}
+
+#options {
+    background-color: #5ccb5c;
+}
+
+#searchSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+
+
+@media (max-width: 500px) {
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        /* position: fixed; */
+        left: 5px;
+        top: 10px;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    #searchSection {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+}
+

@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#header {
+    display: flex;
+    /* position: fixed; */
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-top: 5px solid green;
+    border-bottom: 5px solid green;
+    border-right: 5px solid green;
+    width: fit-content;
+    z-index: 100;
+}
+
+#header > b {
+    min-width: 100px; 
+    padding: 10px 0;
+    border: 1px solid #dfe4e9;
+    background-color: #fff;
+    text-align: center;
+    
+}
+
+.row {
+    display: flex;
+}
+
+.row >b, .row>div {
+    min-width: 100px;
+    padding: 10px 0;
+    border: 1px solid #dfe4e9;
+}
+
+.row > b:first-child {
+    text-align: center;
+    background-color: #fff;
+    position: sticky;
+    left: 0;
+}
+
+#options {
+    padding: 10px;
+    background-color: #ecf0f1;
+    /* background-color: #00832D; */
+}
+
+#active-cell {
+    background-color: white;
+    padding: 2px 10px;
+    border-radius: 4px;
+    padding: 11px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    border-left: 5px solid green;
+    border-bottom: 5px solid green;
+    border-right: 5px solid green;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    
+}
+
+#addCell {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: white;
+    border: none;
+}
+
+#addCell > span {
+    font-size: xx-large;
+}
+
+#searchInput {
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid blue;
+
+}
+
+label {
+    font-size: 20px;
+    font-weight: 20;
+}
+
+#searchIcon {
+    font-size: xx-large;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+#outputShow {
+    padding: 10px;
+    background-color: white;
+}

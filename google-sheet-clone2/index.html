@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon"
+        href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-sheets-icon.png"
+        type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+    <div id="options">
+        <div class="menu">
+            <!-- <span class="material-icons menuBar">
+                menu
+                </span> -->
+            <div id="bold" onclick="onClickBold(this)"> <b>B</b></div>
+            <div id="italic" onclick="onClickItalic(this)"> <b><i>I</i></b> </div>
+            <div id="underline" onclick="onClickUnderline(this)"> <b><u>U</u></b> </div>
+
+            <div data-value="start" onclick="onClickTextAlign(this)" class="material-icons active-options text-align">
+                format_align_left</div>
+            <div data-value="right" onclick="onClickTextAlign(this)" class="material-icons text-align">
+                format_align_right</div>
+            <div data-value="center" onclick="onClickTextAlign(this)" class="material-icons text-align">
+                format_align_justify</div>
+
+            <div id="text-color">
+                <label for="color-picker"><span class="material-icons">
+                        border_color
+                    </span></label>
+                <input onchange="onChangeTextColor(this)" type="color" id="color-picker" style="width: 0; height: 0;" />
+            </div>
+
+            <div id="bg-color">
+                <label for="bgcolor-picker"><span class="material-icons">
+                        format_color_fill
+                    </span></label>
+                <input onchange="onchangeBackgroundColor(this)" type="color" id="bgcolor-picker"
+                    style="width: 0; height: 0" ; />
+            </div>
+
+            
+        <div id="searchSection">
+                <label for="searchbar">Search :</label>
+                <input id="searchInput" type="search" placeholder="Search...">
+                <button></button>
+                <span id="searchIcon" class="material-icons"> search </span>
+                <span id="outputShow"></span>
+            </div>
+
+        </div>
+
+
+        <span id="active-cell">null</span>
+    </div>
+
+    <main id="main" style="position: relative; width: 99vw; height: 78vh; margin: auto; overflow: scroll;">
+        <div id="header">
+            <b style="position: sticky; background-color: #fff; z-index: 100;">S.No</b>
+        </div>
+        <section id="body">
+
+        </section>
+    </main>
+    <!-- These buttons are to add more cells in a docs -->
+    <button id="addCell" onclick="addMoreCells()"><span class="material-icons">
+            add
+        </span></i></button>
+
+    <!-- <button onclick="window.print('../sample.pdf')">Print</button>
+
+        <input type="button" id="bt" 
+        onclick="print('../sample.pdf')" 
+            value="Print PDF" /> -->
+
+    <script src="options.js"></script>
+    <script src="script.js"></script>
+    <script src="print.js"></script>
+    <script src="search.js"></script>
+</body>
+
+</html>
